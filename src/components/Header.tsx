@@ -22,15 +22,15 @@ const Header = () => {
         <div className="flex items-center">
           <div className="flex items-center space-x-2">
             <div className="w-10 h-10 rounded-lg bg-qf-sage/10 flex items-center justify-center">
-              <div className="text-lg font-display font-bold">
-                <span className="text-qf-sage">Q</span><span className="text-qf-text-inverse">F</span>
+              <div className="text-lg font-display font-bold drop-shadow-sm">
+                <span className="text-qf-sage drop-shadow-sm">Q</span><span className="text-qf-text-inverse drop-shadow-sm">F</span>
               </div>
             </div>
             <div className="hidden sm:flex flex-col">
-              <span className="text-qf-text-inverse font-display font-semibold text-sm leading-tight">
-                <span className="text-qf-text-inverse">Quintaneira</span><span className="text-qf-sage">Ferreira</span>
+              <span className="text-qf-text-inverse font-display font-semibold text-sm leading-tight drop-shadow-sm">
+                <span className="text-qf-text-inverse drop-shadow-sm">Quintaneira</span><span className="text-qf-sage drop-shadow-sm">Ferreira</span>
               </span>
-              <span className="text-qf-text-inverse/70 text-xs font-body tracking-wide uppercase">
+              <span className="text-qf-text-inverse/80 text-xs font-body tracking-wide uppercase drop-shadow-sm">
                 Advocacia
               </span>
             </div>

@@ -32,7 +32,7 @@ const SobreSection = () => {
   return (
     <section id="sobre" className="py-20 bg-white relative overflow-hidden">
       {/* Subtle pattern overlay */}
-      <div className="absolute inset-0 bg-pattern-qf opacity-30"></div>
+      <div className="absolute inset-0 bg-pattern-qf opacity-50"></div>
       <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-qf-sage/5 to-transparent blur-3xl"></div>
       
       <div className="container mx-auto px-4 max-w-4xl relative z-10">

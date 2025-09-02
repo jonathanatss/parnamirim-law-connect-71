@@ -24,8 +24,8 @@ const HeroSection = () => {
         <div className="space-y-8 animate-fade-in-left">
           <div className="space-y-6">
             <h1 className="font-display text-display-lg lg:text-6xl font-semibold text-qf-text-inverse text-balance leading-tight">
-              <span className="inline-block animate-fade-in-up">Direito do Trabalho.</span>
-              <span className="block text-qf-sage bg-gradient-to-r from-qf-sage to-qf-sage-700 bg-clip-text text-transparent animate-fade-in-up [animation-delay:200ms]">
+              <span className="inline-block animate-fade-in-up text-qf-text-inverse drop-shadow-sm">Direito do Trabalho.</span>
+              <span className="block text-qf-sage bg-gradient-to-r from-qf-sage to-qf-sage-700 bg-clip-text text-transparent animate-fade-in-up [animation-delay:200ms] drop-shadow-sm">
                 Essencial e eficaz.
               </span>
             </h1>
@@ -77,10 +77,10 @@ const HeroSection = () => {
                 </div>
                 <div className="space-y-2">
                   {/* Nome completo com cores diferenciadas */}
-                  <h3 className="font-display text-xl font-semibold tracking-tight group-hover:text-qf-sage transition-colors duration-300">
-                    <span className="text-qf-text-inverse">Quintaneira</span><span className="text-qf-sage">Ferreira</span>
+                  <h3 className="font-display text-xl font-semibold tracking-tight group-hover:text-qf-sage transition-colors duration-300 drop-shadow-sm">
+                    <span className="text-qf-text-inverse drop-shadow-sm">Quintaneira</span><span className="text-qf-sage drop-shadow-sm">Ferreira</span>
                   </h3>
-                  <p className="text-qf-text-inverse/70 text-sm font-body tracking-[0.2em] uppercase group-hover:text-qf-text-inverse/90 transition-colors duration-300">
+                  <p className="text-qf-text-inverse/80 text-sm font-body tracking-[0.2em] uppercase group-hover:text-qf-text-inverse/90 transition-colors duration-300 drop-shadow-sm">
                     Advocacia
                   </p>
                 </div>
