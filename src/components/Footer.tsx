@@ -26,30 +26,30 @@ const Footer = () => {
           </div>
 
           {/* Address & Registration */}
-          <div className="space-y-3 text-qf-text-inverse/80">
+          <div className="space-y-3 text-qf-text-inverse/95">
             <p className="text-body-md font-medium">
-              <span className="text-qf-sage">Parnamirim/RN</span> • Atendimento presencial e online
+              <span className="text-qf-sage font-semibold">Parnamirim/RN</span> • Atendimento presencial e online
             </p>
             <p className="text-body-sm">
-              <span className="text-qf-sage font-medium">OAB/RN nº 12.345</span> • Fernando Quintaneira
+              <span className="text-qf-sage font-semibold">OAB/RN nº 12.345</span> • Fernando Quintaneira
             </p>
           </div>
 
           {/* Links */}
           <div className="flex justify-center space-x-8 text-body-sm">
-            <button className="text-qf-text-inverse/60 hover:text-qf-sage transition-all duration-300 hover:scale-105 font-medium">
+            <button className="text-qf-text-inverse/80 hover:text-qf-sage transition-all duration-300 hover:scale-105 font-medium">
               Política de Privacidade
             </button>
-            <span className="text-qf-text-inverse/40">•</span>
-            <button className="text-qf-text-inverse/60 hover:text-qf-sage transition-all duration-300 hover:scale-105 font-medium">
+            <span className="text-qf-text-inverse/60">•</span>
+            <button className="text-qf-text-inverse/80 hover:text-qf-sage transition-all duration-300 hover:scale-105 font-medium">
               Termos de Uso
             </button>
           </div>
 
           {/* Copyright */}
-          <div className="pt-8 border-t border-qf-text-inverse/10">
-            <p className="text-body-sm text-qf-text-inverse/60 leading-relaxed">
-              © 2024 <span className="text-qf-sage font-medium">QuintaneiraFerreira Advocacia</span>. Todos os direitos reservados.
+          <div className="pt-8 border-t border-qf-text-inverse/20">
+            <p className="text-body-sm text-qf-text-inverse/80 leading-relaxed">
+              © 2024 <span className="text-qf-sage font-semibold">QuintaneiraFerreira Advocacia</span>. Todos os direitos reservados.
             </p>
           </div>
         </div>
