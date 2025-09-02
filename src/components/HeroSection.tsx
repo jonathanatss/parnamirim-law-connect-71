@@ -52,10 +52,10 @@ const HeroSection = () => {
             </Button>
             
             <Button 
-              variant="outline" 
+              variant="outline-inverse" 
               size="lg"
               onClick={scrollToContact}
-              className="group hover:elevation-1 hover:-translate-y-0.5 transition-all duration-300 backdrop-blur-sm bg-white/5 border-qf-text-inverse/30 text-qf-text-inverse hover:bg-qf-sage hover:border-qf-sage"
+              className="group hover:elevation-1 hover:-translate-y-0.5 transition-all duration-300 hover:bg-qf-sage hover:border-qf-sage hover:text-qf-text-inverse"
             >
               Enviar mensagem
               <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />

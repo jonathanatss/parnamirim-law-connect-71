@@ -13,8 +13,10 @@ const buttonVariants = cva(
         default: "bg-qf-sage text-qf-text-inverse hover:bg-qf-sage-700 rounded-xl elevation-1",
         // WhatsApp CTA - Enhanced primary with better styling
         whatsapp: "bg-qf-sage text-qf-text-inverse hover:bg-qf-sage-700 hover:scale-105 rounded-xl elevation-1 font-semibold",
-        // Secondary - Outline with QF colors
+        // Secondary - Outline with QF colors for light backgrounds
         outline: "border border-qf-sage text-qf-sage hover:bg-qf-sage hover:text-qf-text-inverse bg-transparent rounded-xl",
+        // New variant for outline on dark backgrounds
+        "outline-inverse": "border border-qf-text-inverse/60 text-qf-text-inverse hover:bg-qf-text-inverse/10 hover:border-qf-text-inverse backdrop-blur-sm rounded-xl",
         // Subtle secondary
         secondary: "bg-qf-paper text-qf-text-primary hover:bg-qf-deep/5 rounded-xl",
         // Ghost for header nav
