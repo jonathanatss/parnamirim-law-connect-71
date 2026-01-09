@@ -2,8 +2,6 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
 const HeroSection = () => {
-  const whatsappLink = "https://wa.me/5584999999999?text=Olá,%20gostaria%20de%20falar%20sobre%20direito%20trabalhista";
-
   const scrollToContact = () => {
     const element = document.getElementById('contato');
     if (element) {
@@ -12,7 +10,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="min-h-[80vh] bg-gradient-hero bg-pattern-qf flex items-center justify-center px-4 py-20 relative overflow-hidden">
+    <section className="min-h-[80vh] bg-gradient-paper-elegant bg-pattern-qf flex items-center justify-center px-4 py-20 relative overflow-hidden">
       {/* Subtle animated background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 left-10 w-32 h-32 bg-qf-sage/5 rounded-full blur-xl animate-float"></div>
@@ -23,14 +21,14 @@ const HeroSection = () => {
         {/* Content */}
         <div className="space-y-8 animate-fade-in-left">
           <div className="space-y-6">
-            <h1 className="font-display text-display-lg lg:text-6xl font-semibold text-qf-text-inverse text-balance leading-tight">
-              <span className="inline-block animate-fade-in-up text-qf-text-inverse drop-shadow-sm">Direito do Trabalho.</span>
+            <h1 className="font-display text-display-lg lg:text-6xl font-semibold text-qf-text-primary text-balance leading-tight">
+              <span className="inline-block animate-fade-in-up text-qf-text-primary drop-shadow-sm">Direito do Trabalho.</span>
               <span className="block text-qf-sage bg-gradient-to-r from-qf-sage to-qf-sage-700 bg-clip-text text-transparent animate-fade-in-up [animation-delay:200ms] drop-shadow-sm">
                 Essencial e eficaz.
               </span>
             </h1>
             
-            <p className="text-body-lg text-qf-text-inverse/90 max-w-lg text-balance leading-relaxed animate-fade-in-up [animation-delay:400ms]">
+            <p className="text-body-lg text-qf-deep max-w-lg text-balance leading-relaxed animate-fade-in-up [animation-delay:400ms]">
               Atuação estratégica para trabalhadores e empresas em Parnamirim/RN com 
               <span className="text-qf-sage font-medium"> transparência total</span> e 
               <span className="text-qf-sage font-medium"> resultados concretos</span>.
@@ -40,53 +38,37 @@ const HeroSection = () => {
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 items-start animate-fade-in-up [animation-delay:600ms]">
             <Button 
-              variant="whatsapp" 
-              size="lg"
-              asChild
-              className="group hover:elevation-sage hover:-translate-y-0.5 transition-all duration-300"
-            >
-              <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
-                Falar no WhatsApp
-                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-              </a>
-            </Button>
-            
-            <Button 
-              variant="outline-inverse" 
+              variant="outline" 
               size="lg"
               onClick={scrollToContact}
-              className="group hover:elevation-1 hover:-translate-y-0.5 transition-all duration-300 hover:bg-qf-sage hover:border-qf-sage hover:text-qf-text-inverse"
+              className="group hover:elevation-1 hover:-translate-y-0.5 transition-all duration-300"
             >
-              Enviar mensagem
+              Conheça nossos serviços
               <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>
         </div>
 
-        {/* Brand Element */}
+        {/* Attorney Photo */}
         <div className="flex justify-center lg:justify-end animate-fade-in-right">
           <div className="relative group animate-scale-in [animation-delay:800ms]">
-            {/* Main QF Logo */}
-            <div className="relative z-10 bg-gradient-sage-subtle backdrop-blur-sm rounded-3xl p-12 border border-qf-sage/20 hover:border-qf-sage/40 transition-all duration-500 group-hover:elevation-sage">
-              <div className="text-center space-y-6">
-                {/* QF Monogram - Q verde, F azul */}
-                <div className="w-32 h-32 mx-auto rounded-2xl bg-gradient-to-br from-qf-sage/10 to-qf-sage/5 flex items-center justify-center border border-qf-sage/30 group-hover:border-qf-sage/50 transition-all duration-500 hover:scale-105">
-                  <div className="text-6xl font-display font-bold tracking-tighter group-hover:animate-float">
-                    <span className="text-qf-sage drop-shadow-sm">Q</span><span className="text-qf-ink drop-shadow-sm">F</span>
-                  </div>
-                </div>
-                <div className="space-y-2">
-                  {/* Nome completo com cores diferenciadas */}
-                  <h3 className="font-display text-xl font-semibold tracking-tight group-hover:text-qf-sage transition-colors duration-300 drop-shadow-sm">
-                    <span className="text-qf-text-inverse drop-shadow-sm">Quintaneira</span><span className="text-qf-sage drop-shadow-sm">Ferreira</span>
+            <div className="relative z-10 bg-gradient-sage-subtle backdrop-blur-sm rounded-3xl p-4 border border-qf-sage/20 hover:border-qf-sage/40 transition-all duration-500 group-hover:elevation-sage">
+              <div className="relative w-72 h-72 lg:w-80 lg:h-80 rounded-2xl overflow-hidden shadow-lg border border-qf-sage/30 group-hover:border-qf-sage/50 transition-all duration-500">
+                <img 
+                  src="/fernando-quintaneira-advogado.jpg" 
+                  alt="Fernando Quintaneira - Advogado" 
+                  className="w-full h-full object-cover object-top filter grayscale hover:grayscale-0 transition-all duration-700 group-hover:scale-105" 
+                />
+                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-qf-ink/80 to-transparent p-4 text-center">
+                  <h3 className="font-display text-xl font-semibold text-qf-text-inverse drop-shadow-sm">
+                    Fernando Quintaneira
                   </h3>
-                  <p className="text-qf-text-inverse/80 text-sm font-body tracking-[0.2em] uppercase group-hover:text-qf-text-inverse/90 transition-colors duration-300 drop-shadow-sm">
-                    Advocacia
+                  <p className="text-qf-text-inverse/90 text-sm font-body tracking-wide uppercase drop-shadow-sm">
+                    Advogado Trabalhista
                   </p>
                 </div>
               </div>
             </div>
-            
             {/* Enhanced background glow */}
             <div className="absolute -inset-8 bg-gradient-to-r from-qf-sage/10 via-qf-sage/5 to-transparent rounded-full blur-2xl -z-10 group-hover:from-qf-sage/20 group-hover:via-qf-sage/10 transition-all duration-700 animate-glow-pulse"></div>
             <div className="absolute -inset-12 bg-gradient-to-br from-qf-sage/5 to-transparent rounded-full blur-3xl -z-20 group-hover:from-qf-sage/10 transition-all duration-1000"></div>

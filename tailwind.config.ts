@@ -19,8 +19,8 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				display: ['Fraunces', 'Georgia', 'serif'],
-				body: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
+				display: ['Giliams', 'Georgia', 'serif'],
+				body: ['LEMON MILK', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
 			},
 			fontSize: {
 				'display-lg': ['2.5rem', { lineHeight: '1.2', letterSpacing: '-0.01em' }], // 40px
@@ -32,14 +32,14 @@ export default {
 			colors: {
 				// QuintaneiraFerreira Brand Colors
 				qf: {
-					ink: 'hsl(var(--qf-ink))',
-					sage: 'hsl(var(--qf-sage))',
-					'sage-700': 'hsl(var(--qf-sage-700))',
-					deep: 'hsl(var(--qf-deep))',
-					paper: 'hsl(var(--qf-paper))',
-					'text-primary': 'hsl(var(--qf-text-primary))',
-					'text-inverse': 'hsl(var(--qf-text-inverse))',
-					border: 'hsl(var(--qf-border))',
+					ink: '#0C1F2D',
+					sage: '#67946B',
+					'sage-700': '#4B6F58',
+					deep: '#243A40',
+					paper: '#F3F1ED',
+					'text-primary': '#111418',
+					'text-inverse': '#FFFFFF',
+					border: '#26413E',
 				},
 				// Semantic Tokens
 				border: 'hsl(var(--border))',

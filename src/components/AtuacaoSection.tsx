@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import AnimatedSection from "@/components/AnimatedSection";
 import { 
@@ -11,44 +10,36 @@ import {
 } from "lucide-react";
 
 const AtuacaoSection = () => {
-  const whatsappLink = "https://wa.me/5584999999999";
-
   const areas = [
     {
       icon: Clock,
       title: "Horas Extras e Intervalos",
-      description: "Cobrança de horas extras não pagas e intervalos suprimidos com cálculo preciso.",
-      whatsapp: `${whatsappLink}?text=Gostaria%20de%20falar%20sobre%20horas%20extras%20e%20intervalos`
+      description: "O não pagamento correto de horas extras ou a supressão de intervalos é uma das violações trabalhistas mais comuns. A lei garante ao trabalhador o direito de receber pela jornada excedente e pelo tempo de descanso não respeitado, assegurando a justa compensação pelo esforço prestado.",
     },
     {
       icon: FileText,
       title: "Verbas Rescisórias",
-      description: "Revisão e cobrança de verbas rescisórias, FGTS, seguro-desemprego e multas.",
-      whatsapp: `${whatsappLink}?text=Preciso%20de%20ajuda%20com%20verbas%20rescisórias`
+      description: "Na rescisão do contrato, o empregado tem direito a receber corretamente férias, 13º, aviso prévio, FGTS e demais verbas trabalhistas, de acordo com seu tipo de dispensa. A ausência ou pagamento incompleto dessas parcelas enseja a cobrança judicial, garantindo ao trabalhador seus direitos constitucionais.",
     },
     {
       icon: UserCheck,
       title: "Reconhecimento de Vínculo",
-      description: "Transformação de contratos PJ/MEI em vínculo empregatício com direitos garantidos.",
-      whatsapp: `${whatsappLink}?text=Gostaria%20de%20falar%20sobre%20reconhecimento%20de%20vínculo`
+      description: "Mesmo sem anotação na CTPS, quando presentes os requisitos da relação de emprego - subordinação, pessoalidade, habitualidade e remuneração - é possível o reconhecimento do vínculo trabalhista. Essa medida garante acesso a todos os direitos e proteções da legislação.",
     },
     {
       icon: AlertTriangle,
       title: "Insalubridade e Periculosidade",
-      description: "Perícia e cobrança de adicionais por exposição a agentes nocivos à saúde.",
-      whatsapp: `${whatsappLink}?text=Preciso%20de%20ajuda%20com%20insalubridade%20ou%20periculosidade`
+      description: "Atividades exercidas em condições de risco ou em ambientes insalubres asseguram ao trabalhador adicionais específicos em sua remuneração. Quando não pagos, esses valores podem ser exigidos judicialmente, reparando a omissão do empregador.",
     },
     {
       icon: Shield,
-      title: "Assédio Moral/Sexual",
-      description: "Defesa contra assédio no ambiente de trabalho com indenização adequada.",
-      whatsapp: `${whatsappLink}?text=Gostaria%20de%20relatar%20um%20caso%20de%20assédio`
+      title: "Rescisão Indireta",
+      description: "Ocorre quando a empresa descumpre de forma grave suas obrigações contratuais, tornando impossível a continuidade do vínculo. Nesses casos, o trabalhador pode encerrar o contrato e ainda assim receber todas as verbas de uma demissão sem justa causa.",
     },
     {
       icon: Building,
       title: "Consultoria para Empresas",
-      description: "Auditoria trabalhista, defesa em ações e políticas de compliance.",
-      whatsapp: `${whatsappLink}?text=Empresa%20interessada%20em%20consultoria%20trabalhista`
+      description: "A atuação preventiva no âmbito trabalhista é essencial para reduzir riscos e evitar passivos. Por meio de análise estratégica e adequação das práticas empresariais à legislação, é possível garantir segurança jurídica e maior eficiência na gestão de pessoas.",
     }
   ];
 
@@ -63,7 +54,7 @@ const AtuacaoSection = () => {
       <div className="container mx-auto px-4 relative z-10">
         <AnimatedSection animation="fade-in-up">
           <div className="text-center mb-16">
-            <h2 className="font-display text-display-md lg:text-4xl font-semibold text-qf-text-primary mb-6 bg-gradient-to-r from-qf-text-primary to-qf-deep bg-clip-text text-transparent">
+            <h2 className="font-display text-display-md lg:text-4xl font-semibold text-qf-text-primary mb-6">
               Áreas de Atuação
             </h2>
             <p className="text-body-lg text-qf-deep max-w-2xl mx-auto leading-relaxed">
@@ -93,21 +84,10 @@ const AtuacaoSection = () => {
                     </CardTitle>
                   </CardHeader>
                   
-                  <CardContent className="pt-0 flex-1 flex flex-col">
-                    <CardDescription className="text-body-md text-qf-deep mb-6 leading-relaxed flex-1">
+                  <CardContent className="pt-0 flex-1">
+                    <CardDescription className="text-body-md text-qf-deep leading-relaxed">
                       {area.description}
                     </CardDescription>
-                    
-                    <Button 
-                      variant="link" 
-                      size="sm" 
-                      asChild
-                      className="p-0 h-auto text-qf-sage group-hover:text-qf-sage-700 font-semibold self-start hover:gap-3 transition-all duration-300"
-                    >
-                      <a href={area.whatsapp} target="_blank" rel="noopener noreferrer">
-                        Falar no WhatsApp →
-                      </a>
-                    </Button>
                   </CardContent>
                 </Card>
               </AnimatedSection>

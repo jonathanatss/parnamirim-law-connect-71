@@ -44,7 +44,7 @@ const SobreSection = () => {
                 <div>
                   <div className="flex items-center gap-3 mb-4">
                     <Sparkles className="w-6 h-6 text-qf-sage animate-glow-pulse" />
-                    <h2 className="font-display text-display-md lg:text-4xl font-semibold text-qf-text-primary bg-gradient-to-r from-qf-text-primary to-qf-sage bg-clip-text text-transparent">
+                    <h2 className="font-display text-display-md lg:text-4xl font-semibold text-qf-text-primary">
                       Fernando Quintaneira
                     </h2>
                   </div>
@@ -100,19 +100,11 @@ const SobreSection = () => {
                         <div className="space-y-4">
                           <div className="flex items-start space-x-3 group">
                             <Check className="w-5 h-5 text-qf-sage mt-0.5 flex-shrink-0 group-hover:scale-110 transition-transform duration-300" strokeWidth={2} />
-                            <span className="text-body-sm text-qf-deep group-hover:text-qf-text-primary transition-colors duration-300">OAB/RN nº 12.345</span>
+                            <span className="text-body-sm text-qf-deep group-hover:text-qf-text-primary transition-colors duration-300">Bacharel em Direito - Centro Universitário do Rio Grande do Norte (UNI-RN)</span>
                           </div>
                           <div className="flex items-start space-x-3 group">
                             <Check className="w-5 h-5 text-qf-sage mt-0.5 flex-shrink-0 group-hover:scale-110 transition-transform duration-300" strokeWidth={2} />
-                            <span className="text-body-sm text-qf-deep group-hover:text-qf-text-primary transition-colors duration-300">Bacharel em Direito - UFRN</span>
-                          </div>
-                          <div className="flex items-start space-x-3 group">
-                            <Check className="w-5 h-5 text-qf-sage mt-0.5 flex-shrink-0 group-hover:scale-110 transition-transform duration-300" strokeWidth={2} />
-                            <span className="text-body-sm text-qf-deep group-hover:text-qf-text-primary transition-colors duration-300">Pós-graduação em Direito do Trabalho</span>
-                          </div>
-                          <div className="flex items-start space-x-3 group">
-                            <Check className="w-5 h-5 text-qf-sage mt-0.5 flex-shrink-0 group-hover:scale-110 transition-transform duration-300" strokeWidth={2} />
-                            <span className="text-body-sm text-qf-deep group-hover:text-qf-text-primary transition-colors duration-300">Membro da Comissão de Direito Trabalhista OAB/RN</span>
+                            <span className="text-body-sm text-qf-deep group-hover:text-qf-text-primary transition-colors duration-300">Especialista em Direito e Processo do Trabalho pela Pontifícia Universidade Católica do Rio Grande do Sul (PUCRS)</span>
                           </div>
                         </div>
                       </AccordionContent>
@@ -128,7 +120,7 @@ const SobreSection = () => {
         {/* FAQ */}
         <AnimatedSection animation="fade-in-up">
           <div>
-            <h3 className="font-display text-display-md lg:text-4xl font-semibold text-qf-text-primary mb-8 text-center bg-gradient-to-r from-qf-text-primary to-qf-sage bg-clip-text text-transparent">
+            <h3 className="font-display text-display-md lg:text-4xl font-semibold text-qf-text-primary mb-8 text-center">
               Perguntas Frequentes
             </h3>
             

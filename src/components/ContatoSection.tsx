@@ -18,7 +18,7 @@ const ContatoSection = () => {
   });
   const { toast } = useToast();
 
-  const whatsappLink = "https://wa.me/5584999999999?text=Olá,%20gostaria%20de%20falar%20sobre%20direito%20trabalhista";
+  const whatsappLink = "https://wa.me/558498464199?text=Olá,%20gostaria%20de%20falar%20sobre%20direito%20trabalhista";
   const whatsappQR = "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=" + encodeURIComponent(whatsappLink);
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -59,12 +59,12 @@ const ContatoSection = () => {
           <div className="text-center mb-16">
             <div className="flex items-center justify-center gap-3 mb-6">
               <MessageSquare className="w-8 h-8 text-qf-sage animate-glow-pulse" />
-              <h2 className="font-display text-display-md lg:text-4xl font-semibold text-qf-text-primary bg-gradient-to-r from-qf-text-primary to-qf-sage bg-clip-text text-transparent">
+              <h2 className="font-display text-display-md lg:text-4xl font-semibold text-qf-text-primary">
                 Entre em Contato
               </h2>
             </div>
             <p className="text-body-lg text-qf-deep max-w-2xl mx-auto leading-relaxed">
-              Atendimento em <span className="text-qf-sage font-semibold">Parnamirim/RN</span> e 
+              Atendimento em <span className="text-qf-sage font-semibold">Natal/RN</span> e 
               <span className="text-qf-sage font-semibold"> online</span>. Horário comercial de segunda a sexta.
             </p>
           </div>
@@ -86,18 +86,6 @@ const ContatoSection = () => {
                     <span className="text-qf-sage font-semibold">Resposta rápida</span> pelo WhatsApp
                   </p>
                 </div>
-
-                <Button 
-                  variant="whatsapp" 
-                  size="lg" 
-                  asChild 
-                  className="w-full group hover:elevation-sage hover:-translate-y-0.5 transition-all duration-300"
-                >
-                  <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
-                    Falar no WhatsApp agora
-                    <Phone className="ml-2 h-4 w-4 group-hover:scale-110 group-hover:animate-float transition-all duration-300" />
-                  </a>
-                </Button>
 
                 <div className="pt-6 border-t border-qf-border/20">
                   <p className="text-body-sm text-qf-deep mb-4 font-medium">Ou escaneie o QR Code:</p>
@@ -124,7 +112,7 @@ const ContatoSection = () => {
                   </div>
                   <div>
                     <p className="text-body-md text-qf-text-primary font-semibold group-hover:text-qf-sage transition-colors duration-300">Endereço</p>
-                    <p className="text-body-sm text-qf-deep leading-relaxed">Parnamirim/RN • Atendimento presencial e online</p>
+                    <p className="text-body-sm text-qf-deep leading-relaxed">Rua Dr. Luiz Felipe Câmara, nº 55 - Ed. Themis Tower. Natal/RN.</p>
                   </div>
                 </div>
               </AnimatedSection>
@@ -182,7 +170,7 @@ const ContatoSection = () => {
                         onChange={(e) => handleInputChange('whatsapp', e.target.value)}
                         required
                         className="mt-2 border-qf-border/30 focus:border-qf-sage hover:border-qf-sage/50 transition-all duration-300"
-                        placeholder="(84) 99999-9999"
+                        placeholder="(84) 9846-4199"
                       />
                     </div>
 

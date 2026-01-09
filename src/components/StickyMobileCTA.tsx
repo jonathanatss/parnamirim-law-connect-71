@@ -4,7 +4,7 @@ import { useIsMobile } from "@/hooks/use-mobile";
 
 const StickyMobileCTA = () => {
   const isMobile = useIsMobile();
-  const whatsappLink = "https://wa.me/5584999999999?text=Olá,%20gostaria%20de%20falar%20sobre%20direito%20trabalhista";
+  const whatsappLink = "https://wa.me/558498464199?text=Olá,%20gostaria%20de%20falar%20sobre%20direito%20trabalhista";
 
   if (!isMobile) return null;
 

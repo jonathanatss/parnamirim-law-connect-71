@@ -94,7 +94,7 @@ const MediaCarousel = () => {
   }, [emblaApi, onSelect]);
 
   return (
-    <section className="py-20 bg-gradient-hero bg-pattern-qf relative overflow-hidden">
+    <section className="py-20 bg-gradient-paper-elegant bg-pattern-qf relative overflow-hidden">
       {/* Background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 left-10 w-64 h-64 bg-qf-sage/5 rounded-full blur-3xl animate-glow-pulse"></div>
@@ -104,12 +104,10 @@ const MediaCarousel = () => {
       <div className="container mx-auto px-4 relative z-10">
         <AnimatedSection animation="fade-in-up">
           <div className="text-center mb-12">
-            <h2 className="font-display text-display-md lg:text-4xl font-semibold text-qf-text-inverse mb-6">
-              <span className="bg-gradient-to-r from-qf-text-inverse to-qf-sage bg-clip-text text-transparent">
-                Atuação em Campo
-              </span>
+            <h2 className="font-display text-display-md lg:text-4xl font-semibold text-qf-text-primary mb-6">
+              Atuação em Campo
             </h2>
-            <p className="text-body-lg text-qf-text-inverse/90 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-body-lg text-qf-deep max-w-2xl mx-auto leading-relaxed">
               Conheça nosso trabalho através de imagens e vídeos da nossa 
               <span className="text-qf-sage font-semibold"> atuação profissional</span> na área do direito trabalhista
             </p>
@@ -123,7 +121,7 @@ const MediaCarousel = () => {
               <div className="flex">
                 {mediaItems.map((item, index) => (
                   <div key={item.id} className="flex-[0_0_100%] min-w-0 px-4">
-                    <Card className="elevation-1 hover:elevation-hover border-qf-sage/20 bg-gradient-sage-subtle backdrop-blur-sm transition-all duration-500 hover:border-qf-sage/40">
+                    <Card className="elevation-1 hover:elevation-hover border-qf-border/20 bg-gradient-sage-subtle backdrop-blur-sm transition-all duration-500 hover:border-qf-sage/40">
                       <CardContent className="p-0">
                         <div className="relative aspect-video rounded-t-xl overflow-hidden bg-qf-ink/5">
                           {item.type === 'image' ? (
@@ -162,9 +160,9 @@ const MediaCarousel = () => {
 
             {/* Navigation Buttons */}
             <Button
-              variant="ghost"
+              variant="outline"
               size="icon"
-              className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-qf-text-inverse/10 backdrop-blur-sm border border-qf-text-inverse/20 hover:bg-qf-sage hover:border-qf-sage text-qf-text-inverse hover:text-qf-text-inverse"
+              className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-qf-paper/50 backdrop-blur-sm border-qf-border/20 hover:bg-qf-sage hover:border-qf-sage text-qf-deep hover:text-qf-text-inverse"
               onClick={scrollPrev}
               disabled={!canScrollPrev}
             >
@@ -172,9 +170,9 @@ const MediaCarousel = () => {
             </Button>
             
             <Button
-              variant="ghost"
+              variant="outline"
               size="icon"
-              className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-qf-text-inverse/10 backdrop-blur-sm border border-qf-text-inverse/20 hover:bg-qf-sage hover:border-qf-sage text-qf-text-inverse hover:text-qf-text-inverse"
+              className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-qf-paper/50 backdrop-blur-sm border-qf-border/20 hover:bg-qf-sage hover:border-qf-sage text-qf-deep hover:text-qf-text-inverse"
               onClick={scrollNext}
               disabled={!canScrollNext}
             >
@@ -189,32 +187,12 @@ const MediaCarousel = () => {
                   className={`w-3 h-3 rounded-full transition-all duration-300 ${
                     index === selectedIndex
                       ? 'bg-qf-sage scale-125'
-                      : 'bg-qf-text-inverse/30 hover:bg-qf-text-inverse/50'
+                      : 'bg-qf-deep/30 hover:bg-qf-deep/50'
                   }`}
                   onClick={() => scrollTo(index)}
                 />
               ))}
             </div>
-          </div>
-        </AnimatedSection>
-
-        {/* Call to Action */}
-        <AnimatedSection animation="fade-in-up" delay={400}>
-          <div className="text-center mt-12">
-            <p className="text-body-md text-qf-text-inverse/80 mb-6">
-              Quer saber mais sobre nossos casos de sucesso?
-            </p>
-            <Button 
-              variant="whatsapp" 
-              size="lg"
-              asChild
-              className="group hover:elevation-sage hover:-translate-y-0.5 transition-all duration-300"
-            >
-              <a href="https://wa.me/5584999999999?text=Gostaria%20de%20conhecer%20mais%20sobre%20seus%20casos%20de%20sucesso" target="_blank" rel="noopener noreferrer">
-                Falar sobre seu caso
-                <ChevronRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-              </a>
-            </Button>
           </div>
         </AnimatedSection>
       </div>

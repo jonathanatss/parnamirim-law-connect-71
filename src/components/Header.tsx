@@ -13,7 +13,7 @@ const Header = () => {
     setIsMenuOpen(false);
   };
 
-  const whatsappLink = "https://wa.me/5584999999999?text=Olá,%20gostaria%20de%20falar%20sobre%20direito%20trabalhista";
+  const whatsappLink = "https://wa.me/558498464199?text=Olá,%20gostaria%20de%20falar%20sobre%20direito%20trabalhista";
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-qf-ink/95 backdrop-blur-sm border-b border-qf-border">
@@ -39,19 +39,19 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          <button 
+          <button
             onClick={() => scrollToSection('atuacao')}
             className="text-qf-text-inverse hover:text-qf-sage transition-smooth text-body-md"
           >
             Atuação
           </button>
-          <button 
+          <button
             onClick={() => scrollToSection('sobre')}
             className="text-qf-text-inverse hover:text-qf-sage transition-smooth text-body-md"
           >
             Sobre
           </button>
-          <button 
+          <button
             onClick={() => scrollToSection('contato')}
             className="text-qf-text-inverse hover:text-qf-sage transition-smooth text-body-md"
           >
@@ -61,8 +61,8 @@ const Header = () => {
 
         {/* CTA Button */}
         <div className="flex items-center space-x-4">
-          <Button 
-            variant="whatsapp" 
+          <Button
+            variant="whatsapp"
             size="sm"
             asChild
             className="hidden sm:inline-flex"
@@ -87,28 +87,28 @@ const Header = () => {
         {isMenuOpen && (
           <div className="absolute top-16 left-0 right-0 bg-qf-ink border-b border-qf-border md:hidden">
             <nav className="flex flex-col space-y-4 p-4">
-              <button 
+              <button
                 onClick={() => scrollToSection('atuacao')}
                 className="text-qf-text-inverse hover:text-qf-sage transition-smooth text-left"
               >
                 Atuação
               </button>
-              <button 
+              <button
                 onClick={() => scrollToSection('sobre')}
                 className="text-qf-text-inverse hover:text-qf-sage transition-smooth text-left"
               >
                 Sobre
               </button>
-              <button 
+              <button
                 onClick={() => scrollToSection('contato')}
                 className="text-qf-text-inverse hover:text-qf-sage transition-smooth text-left"
               >
                 Contato
               </button>
-              <Button 
-                variant="whatsapp" 
-                size="sm" 
-                asChild 
+              <Button
+                variant="whatsapp"
+                size="sm"
+                asChild
                 className="w-full mt-4 sm:hidden"
               >
                 <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
