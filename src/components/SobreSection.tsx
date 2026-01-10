@@ -54,11 +54,6 @@ const SobreSection = () => {
                     Especializado em direitos do trabalhador e consultoria empresarial, com atendimento 
                     online e presencial em Parnamirim/Natal.
                   </p>
-                  <p className="text-body-md text-qf-deep leading-relaxed">
-                    Mais de uma década defendendo direitos trabalhistas com 
-                    <span className="text-qf-sage font-medium"> estratégias personalizadas</span> e 
-                    <span className="text-qf-sage font-medium"> transparência total</span> no processo.
-                  </p>
                 </div>
 
                 {/* Diferenciais */}

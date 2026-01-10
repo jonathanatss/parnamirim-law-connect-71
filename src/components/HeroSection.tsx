@@ -57,7 +57,7 @@ const HeroSection = () => {
                 <img 
                   src="/fernando-quintaneira-advogado.jpg" 
                   alt="Fernando Quintaneira - Advogado" 
-                  className="w-full h-full object-cover object-top filter grayscale hover:grayscale-0 transition-all duration-700 group-hover:scale-105" 
+                  className="w-full h-full object-cover object-top -translate-y-6 lg:-translate-y-8 filter grayscale hover:grayscale-0 transition-all duration-700 group-hover:scale-105" 
                 />
                 <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-qf-ink/80 to-transparent p-4 text-center">
                   <h3 className="font-display text-xl font-semibold text-qf-text-inverse drop-shadow-sm">
