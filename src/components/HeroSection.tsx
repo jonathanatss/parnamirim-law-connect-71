@@ -29,7 +29,7 @@ const HeroSection = () => {
             </h1>
             
             <p className="text-body-lg text-qf-deep max-w-lg text-balance leading-relaxed animate-fade-in-up [animation-delay:400ms]">
-              Atuação estratégica para trabalhadores e empresas em Parnamirim/RN com 
+              Atuação estratégica para trabalhadores e empresas com 
               <span className="text-qf-sage font-medium"> transparência total</span> e 
               <span className="text-qf-sage font-medium"> resultados concretos</span>.
             </p>
