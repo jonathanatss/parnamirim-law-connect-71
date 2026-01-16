@@ -52,7 +52,7 @@ const SobreSection = () => {
                     Advogado trabalhista com atuação focada em <span className="text-qf-sage font-semibold">evidências</span>, 
                     <span className="text-qf-sage font-semibold"> prazos</span> e <span className="text-qf-sage font-semibold">comunicação clara</span>. 
                     Especializado em direitos do trabalhador e consultoria empresarial, com atendimento 
-                    online e presencial em Parnamirim/Natal.
+                    em todo o Brasil.
                   </p>
                 </div>
 
